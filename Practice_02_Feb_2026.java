@@ -141,3 +141,13 @@ class Solution {
     }
 }
 */
+
+import java.util.stream.Stream;
+
+public class Practice_02_Feb_2026{
+    public static void main(String[] args) {
+        Stream.generate(() -> (int)(Math.random() * 100))
+              .limit(5)
+              .forEach(System.out::println);
+    }
+}
